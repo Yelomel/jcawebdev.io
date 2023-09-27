@@ -69,11 +69,9 @@ body {
 
 /* About */
 .about-section {
-    /* background: url(./img/Illustration.png) no-repeat left; */
     background-size: 40%;
     background-color: #e2e5ef;
     overflow: hidden;
-    /* padding: 81px 0; */
 }
 
 .inner-container {
@@ -107,14 +105,19 @@ body {
     margin-bottom: 1rem;
 }
 
-.about-img {
-    display: flex;
-    justify-content: space-between;
-    font-weight: 700;
-    font-size: 13px;
+.values h1 {
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
 }
 
-
+.values h1::after {
+    content: "";
+    background: #F6C54B;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
 
 @media screen and (max-width:1200px){
     .inner-container{
@@ -140,8 +143,6 @@ body {
         padding: 60px;
     }
 }
-
-
 /* Services */
 .container1 {
     background-color: #ffffff;
